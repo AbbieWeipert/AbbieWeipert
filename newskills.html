@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exc-3-New Skills</title>
+
+  <! -- ==== Using a Google Font is easy ==== -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Montserrat" rel="stylesheet">
+
+  <! -- ==== Link to my CSS Styles Sheet ==== -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+
+</head>
+
+<body>
+
+<!-- ==== Site navigation menu ==== -->
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="practice.html">Practice & Review</a></li>
+  <li><a class="active" href="newskills.html">New Skills</a></li>
+</ul>
+
+<!-- ==== Main content ==== -->
+
+<h1>CSS Exercise 3, Part Two! New Skills</h1><br>
+<hr>
+
+<h2>Combinators</h2>
+There are four different combinators in CSS. Let's use "div" as an example:
+    <ul><li>Descendant selector (space) - Selects all elements inside "div"</li>
+    <li>Child selector (>) - Selects all elements that are immediate children of "div"</li>
+    <li>Adjacent sibling selector (+) - Selects the next sibling of "div"</li>
+    <li>General sibling selector (~) - Selects all following siblings of "div"</li></ul>
+
+  <h4>Descendent Selector Example</h4>
+  <div class="combdesc">
+  In this "div" section I will create an example highlighting the descendent selector.
+  All "p" within "div" should be highlighted as they are descendents of "div" regardless
+  of being a direct child or further removed.
+  <p>First paragraph in "div" </p>
+  <p>Second paragraph in "div" </p>
+  <strong><p>Third  paragraph in "div" that uses a "strong" HTML tag, too</p></strong>
+  </div>
+  
+  <p> This text is an adjacent sibling to "div" but is NOT within "div"</p>
+
+  <h4>Child Selector Example</h4>
+  <div class="combchild">
+  In this "div" section I will create an example highlighting the child selector.
+  All "p" within "div" should be highlighted if they are a child of "div" but not if they are
+  further removed.
+  <p>First paragraph in "div" </p>
+  <p>Second paragraph in "div" </p>
+  <strong><p>Third  paragraph in "div" that uses a "strong" HTML tag, too. The "strong" tag
+  further removes this "p" from "div" meaning it is no longer a child.</p></strong>
+  </div>
+  
+  <p> This text is an adjacent sibling to "div" but is NOT within "div"</p>
+
+  <h4>General Sibling Selector Example</h4>
+  <div class="combgensib">
+  In this "div" section I will create an example highlighting the child selector.
+  All "p" within "div" should be highlighted if they are a child of "div" but not if they are
+  further removed.
+  <p>First paragraph in "div" </p>
+  <p>Second paragraph in "div" </p>
+  <strong><p>Third  paragraph in "div" that uses a "strong" HTML tag, too. The "strong" tag
+  further removes this "p" from "div" meaning it is no longer a child.</p></strong>
+  </div>
+  
+  <p> This text is an adjacent sibling to "div" but is NOT within "div"</p>
+  <p> This is a second text as an adjacent sibling to "div" but is NOT within "div"
+  both should be selected as siblings to "div".</p> <br>
+
+<hr>
+<h2>Pseudo-Classes</h2>
+Pseudo-classes can apply a special style to an element. Here are a couple of examples that I will
+find useful as my web designs become more advanced and complex.
+  <div> <h4>Do More with Links</h4>
+  <p>
+    Create an ordered list of 3 links that will open pages in a new tab. Set the color
+    for visited links to "gold" while unvisited will be "white" and the background color 
+    for hover to a light gray of your choice.
+    <ol>
+    <li><a href=https://www.tumblr.com/ target="_blank">Tumbled</a></li>
+    <li><a href=https://www.instagram.com/?hl=en target="_blank">Insta My Gram</a></li>
+    <li><a href=https://twitter.com/?lang=en target="_blank">Tweetered</a></li></ol>
+  </p>
+  
+  <h4>Call Attention with Tooltip Hover</h4>
+  <div class="joke1"> Find a joke (keep it PG, people!) and prompt the user to hover over the joke intro
+  in order to display the punchline.<br> <br>
+  <strong>How do you make a Kleenex dance?</strong>
+  <p class="joke2">Put a little boogie in it!</p>
+  </div></div><br>
+  <hr />
+
+
+<h2>Pseudo-Elements</h2>
+Pseudo-elements allows the application of style to selections of the whole element. I will
+show you how this might come in handy with a couple of examples.<br><br><br>
+
+  <h4>Framing Pseudo-Elements</h4>
+  <div><p>
+  Let's say you are managing a website that provides instructional content for your target audience. Let's 
+  say it teaches the audience how to do something while also providing important details and context. All 
+  that extra info is important, but your primary goal was the how-to function so you want to attract extra 
+  attention to the instructions. Add three brief paragraphs here.<br><br>
+  The first paragraph should be a step-by-step instruction. The second paragraph should be some additional 
+  and supporting information, but not necessary to actually complete the task. The third paragraph will be 
+  another part of the how-to instruction. Call attention to those instructions by inserting the beegif 
+  image before and after the relevant elements.
+  </p>
+  <p class="bee" style="color: gold">First, it is critical to detail out the purpose and goal of your 
+  website. Second, you will want to narrow down exactly who your target audience is.
+  </p>
+  <p>Without knowing who your target audience is, the scope of your design and coding will feel 
+  umanageable. You will be trying to please EVERYONE and ultimately pleasing NONE because the content and 
+  design will just be far too generic. This is an important step that should not be skipped.
+  </p>
+  <p class="bee" style="color: gold">Now that you have the purpose, goal, and target audience defined 
+  get out and do some fact checking. Do members of your target audience actually have a need that your 
+  website fulfills? 
+  </p>
+  </div><br><br>
+
+  <h4>Styling Partial Elements</h4>
+  <div><p class="pseudocolor">
+  There may be times I want to call special attention to the start of a paragraph, such as when I change
+  topics or introduce new concepts. Here, I have included an example of changing the first letter of 
+  this paragraph to an "extra-large" size as well as changing the color to help it stand out. For this 
+  last sentence I'm basically adding some length to ensure the paragraph wraps onto multiple lines. I 
+  really want my formatting of that first paragraph line to jump out at my audience. Where do you think
+  this might be useful in your own design? How will you use it?
+  </p></div><br>
+<hr />
+
+
+<h2>Opacity</h2>
+Insert the saltbae.jpg image with an opacity of 0.35 but remove the transparency when
+the user hoves the mouse over Salt Bae. Let his glory shine through uninhibited. Seeking
+user interaction on your website might hold their attention longer and could prove to be
+a useful tool. Used too much and you can see how it could become annoying.
+  <img class="salt" src="images/saltbae.jpg" width=15%>
+  <br>
+
+<hr>
+<h2>Attribute Selectors</h2>
+There may be times where attention should be called to displayed items to emphasize them 
+or to differentiate those items from others in a similar display frame. For example, 
+here are 4 memes where I wanted to highlight that I really liked two of them
+by giving them a green border. Let's be honest. I liked them ALL! But if I had to pick two...
+  <img src="images/obamabiden.png" title="Biden is Amazing">
+  <img src="images/thinkin.jpg" title="Thinkin Dude is okay">
+  <img src="images/bfmeme.jpeg" title="Distracted Boyfriend is Amazing">
+  <img src="images/blinky.gif" title="Blinky is okay">
+
+<hr />
+
+<br />
+<div><h2>Whew!</h2>
+  That stuff was kind of dry. Here is a selfie of my "accomplished" face 
+  for you to enjoy. You deserve a fun break, too, after all that learning! Better
+  include that green ring so you know it's a good one.<br>
+  (Insert your meme here)
+  <img src="images/selfiememe.jpg" title="My Selfie is Amazing">
+</div>
+
+<!-- Sign and date the page, it's polite! -->
+
+<address>Made December 10, 2017<br>
+  by Abbie W.</address>
+
+</body>
+</html>

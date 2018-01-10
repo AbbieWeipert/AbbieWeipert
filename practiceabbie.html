@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ex-3-Practice Makes Perfect</title>
+
+  <! -- ==== Using a Google Font is easy ==== -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Montserrat" rel="stylesheet">
+
+  <! -- ==== Link to my CSS Styles Sheet ==== -->
+  <link rel="stylesheet" type="text/css" href="styles/styleabbie.css">
+
+
+</head>
+
+<body>
+
+<!-- ==== Site navigation menu ==== -->
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="practice.html">Practice & Review</a></li>
+  <li><a href="newskills.html">New Skills</a></li>
+</ul>
+
+
+<!-- ==== Main content ==== -->
+
+<h1>CSS Exercise 3: Practice & Review </h1>
+  <p style="border: 10px solid gold; margin: 10px 300px; padding: 20px; 
+  text-align:center; font-size:40px;"> 
+  Just like a spoken language, we will forget what we do not practice! With 
+  all this hard work, it would be a shame to let it go. Practice makes perfect!
+  </p>
+<br>
+<hr />
+
+<h4>Ms. W's Sample Solutions</h4>
+<p class="ans">
+This page's HTML file is called practiceabbie.html and is meant as an
+example of how one might respond to the given prompts.
+</p><br>
+<hr />
+
+<h2>Practice Navigation Styling</h2>
+<p>
+On just this page, change the navigation bar so that it is sticky on the BOTTOM 
+as your audience scrolls. Make sure it only changes this page and that all your
+links continue to work as intended.
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">The nav bar is not only moved to the bottom but I removed the margin-top:20px,
+from the body tag in the styleabbie.css file to remove the spacing at the top, and replaced
+it with a margin-bottom: 40px to make room for the bar at the bottom.
+</p><br>
+<hr />
+
+<h2>Style & Explain the CSS Box Model</h2>
+<p>
+The box model is something you will use over and over. It's critical to understand 
+and utilize spacing for effective design. Use this space to describe the box model, 
+insert an image that supports your written description, and include two examples 
+where you have demonstrated the usefulness of spacing and what the box model can do.
+Use subheaders like "h3" to organize your work and descriptions. 
+
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">The CSS Box Model says that all HTML elements can be considered boxes 
+and we can apply style and design to those boxes. Each box has a margin, a border, 
+some padding, and then the content of the HTML element. You can use the 
+box model to make sure elements are properly sized and spaced to create the style 
+and design aesthetic you are going for. <br><br>
+
+Here is one example:<br>
+<img src=images/boxmod.png alt="Box Model">
+<div class="boxmod">
+The Box Model image from W3schools.com above is 428px wide. This content is within 
+a box that is also 199px wide, no matter how big your screen or browser window is. 
+This ensures my image and paragraph elements always have a similar style.
+<ul>
+<li>Content - The content of the box, where text and images appear</li>
+<li>Padding - Clears an area around the content. The padding is transparent</li>
+<li>Border - A border that goes around the padding and content</li>
+<li>Margin - Clears an area outside the border. The margin is transparent</li>
+</ul>
+These parts as defined by: <a href="https://www.w3schools.com/css/css_boxmodel.asp">
+w3schools.com</a>
+</div>
+</p><br>
+<hr />
+
+<h2>How to Insert CSS</h2>
+<p>
+Briefly define external, embedded, and inline CSS and where you would use each. Next,
+utlize embedded CSS to style the background and font of a "div" element. The content
+of "div" should be your description of where to insert CSS. Identify how the syntax 
+changes when using inline versus embedded.
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">
+<div class="insertcss">
+CSS can be inserted into our webpages in a few different ways:
+
+<ul>
+  <li><strong>Inline Styles: </strong>Use within the HTML tag to apply unique style to a single 
+  element. Use sparingly as you lose the efficiency advantages to other CSS usage types. 
+  If you use this method, Internal and External CSS applications will be ignored.</li>
+
+  <li><strong>Internal CSS: </strong>When CSS coding is embedded in the "head" section of the HTML 
+  document, this is called Internal CSS. Use this when you have specific style that 
+  only applies to the one page. Again, try to use sparingly as you will have to 
+  maintain this style within this .html doc specifically.</li>
+
+  <li><strong>External Style Sheet: </strong>Here is where most of your styling will occur. This 
+  is the most efficient way to manage style that applies to an entire website and all its subpages. 
+  Make one change in the external styles.css sheet and it will apply to your whole site!</li>
+
+  <li><strong>Browser Defaults: </strong>Last but not least, the browser will fall back to its
+  defaults if you do not declare other styles using one of the prior three methods.</li>
+</ul> 
+<br>
+
+I hope you enjoy this Iowa Proud background. Did you know that Iowa recognized and allowed
+same-sex marriages starting in 2009? That was only a few years ago! You can read 
+more here 
+<a href="https://www.desmoinesregister.com/story/news/crime-and-courts/2017/04/03/iowa-landmark-same-sex-marriage-ruling-varnum-brien/99989804/"> 
+at the Des Moines Register.</a>
+
+</div></p><br>
+<hr />
+
+<h2>Using Images & Text</h2>
+<p>
+Find any image that speaks to you and insert text in each corner and in the middle using 
+a "div" element called "container" and a "div" element called "top-l", "top-r", "bottom-l" 
+and so on to push a brief text into each corner and the middle. The image should utilize 
+the full width of the screen but the image and text you use are totally up to you!
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">The below image of Salt Bae demonstrates the usage of a container for 
+text pushed around within that container. Enjoy!
+</p><br>
+
+<div class="container">
+  <img src="images/saltbae.jpg" alt="Sale Bae" style="width:100%;">
+  <div class="top-l" style="font-size:40px">Sale Bae</div>
+  <div class="top-r" style="font-size:40px">is the</div>
+  <div class="bottom-r" style="font-size:40px">deny it!</div>
+  <div class="bottom-l" style="font-size:40px">and don't you</div>
+  <div class="middle" style="font-size:90px; color:gold;"><strong>BEST BAE</strong></div>
+</div>
+<hr />
+
+<h2>Tables</h2>
+<p>
+Create a table of your schedule that covers at least 3 days. Merge 
+cells as needed to cover multiple hours of the day. When the rows are hovered over, they 
+should appear shaded. The column headers should be a different color than the cells. The 
+width of the table should be 100%. Make sure it's stylish and not super lame.
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">I did not fully fill out my table but I think you'll get the gist of how 
+you can populate, style, and add value to your webpage using tables.
+
+<table id="schedule">
+  <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td>Early Morning</td>
+    <td rowspan="2">Slept in!</td>
+    <td>5:30 Wake Up</td>
+    <td>5:30 again :(</td>
+  </tr>
+  <tr>
+    <td>Mid-Morning</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Lunch</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Eary Afternoon</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Late Afternoon</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Evening</td>
+    <td></td>
+    <td rowspan="2">So tired...</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Bedtime</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+</p><br>
+<hr />
+
+<h2>Impress Me!</h2>
+<p>
+You have covered a lot of ground these last weeks. Without Ms. Weipert dictating exactly 
+what you must do, create a little mini page in this space that highlights some of what 
+you have learned. You are free to be as creative as you can be! Be funny! Have fun!
+</p>
+
+<h4>ANSWER</h4> 
+<p class="ans">The .
+</p><br>
+
+<br />
+<!-- Sign and date the page, it's polite! -->
+
+<address>Made December 10, 2017<br>
+  by Abbie W.</address>
+
+</body>
+</html>

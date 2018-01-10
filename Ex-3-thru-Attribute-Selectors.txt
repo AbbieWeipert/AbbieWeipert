@@ -1,0 +1,51 @@
+Combinators
+00 XX Change the color of all <p> elements, that are descendants of <div> elements, to "red".
+00 XX Change the color of all <p> elements, that are immediate children of <div> elements, to "red".
+ --> All "p" elements that are descendents of "div" element should be blue but immediate child 
+     descendents of "div" should be red.
+Change the color of <p> elements, that are the adjacent (immediately following) sibling of a <div> 
+     element, to "red".
+00 XX Change the color of <p> elements, that are the siblings of a <div> element, to "red".
+
+00 XX There are four different combinators in CSS:
+    descendant selector (space) - Selects all elements inside "div"
+    child selector (>) - Selects all elements that are immediate children of "div"
+    general sibling selector (~)
+
+
+
+Pseudo-Classes
+00 XX Set the background color for visited and unvisited links to "lightblue", and the background color 
+     for the hover and active link states to "yellow".
+00 XX Change the background color, when a user hovers over p elements, with the class "highlight", to 
+     "lightblue".
+Set the background color of <p> elements, that are the first child of any element, to "lightblue".
+Set the background color of <input> elements that are in focus (clicked or active), to "lightblue".
+
+
+
+Pseudo-Elements
+Set text color to red, for the first line of the <p> element.
+00 XX Set text color to "red", and the text size to "xx-large", for the first letter of the <p> element.
+
+!!! *** ERROR COME BACK TO THIS *** !!!
+XX Insert the image "smiley.gif" before, and after <p> elements, using the ::before and ::after 
+     pseudo-elements.
+
+
+
+Opacity
+00 XX Set the transparency/opacity of the <img> element to "0.4".
+00 XX Remove the transparency/opacity of the <img> element when the user hovers over it with the mouse 
+     pointer.
+
+
+
+Attribute Selectors
+Set the background-color to "lightblue" for elements with a "target" attribute.
+Set the background-color to "lightblue" for elements with an attribute like: target="_blank"
+00 XX Set a border with the color "red", around elements with a "title" attribute containing the word "red".
+Set a border with the color "red", around elements with a "title" attribute starting with "red".
+Set a border with the color "red", around elements with a "title" attribute ending with the 
+     word "flower" (not flowers).
+Set a border with the color "red", around elements with a "title" attribute containing the value "flow".

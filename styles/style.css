@@ -1,0 +1,138 @@
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight:500;
+      text-align: center;
+      color: gold
+    }
+
+    body {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 22px; 
+      font-weight:400;
+      margin:0;
+      color: white;
+      background-color: black;
+      padding: 20px;
+      margin-top:50px;
+    }
+    
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+/* ==== Fixed navigation  bar at the top. Scroll and nav bar stays. ==== */
+  ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  ul.navbar li {
+    float: left
+    }
+
+  ul.navbar li a {
+    display: block;
+    color: gold;
+    text-align: center;
+    padding: 5px 50px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: gray;
+  }
+  
+  a:link {
+    color: gold 
+    }
+  a:visited {
+    color: white 
+    }
+
+  /* mouse over link */
+  a:hover {
+    background-color: #666666;
+  }
+
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: dotted gold;
+    font-weight: 700;
+     text-align: center;
+    }
+
+/* ==== Pseudo-Elements BEES WITHIN HTML FILE ==== */
+  .bee::before {
+    content: url(../images/beegif.gif);
+  }
+  .bee::after {
+    content: url(../images/beegif.gif);
+  }
+
+  .pseudocolor::first-letter {
+    color: gold;
+    font-size: 3em;
+  }
+  .pseudocolor::first-line {
+    color: gold;
+    font-variant: small-caps;
+  }
+
+
+/* ==== Combinator Example ==== */
+  .combdesc p {
+    background-color: #999999;
+  }
+
+  .combchild > p {
+    background-color: #999999;
+  }
+
+
+  .combgensib ~ p {
+    background-color: #999999;
+  }
+
+/* ==== Pseudo-Classes ==== */
+  .joke2 {
+    display: none;
+    background-color: gold;
+    color: #339966;
+    padding: 60px;
+    width: 200px;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  .joke1:hover .joke2 {
+    display: block;
+  }
+
+/* ==== Opacity ==== */
+  .salt {
+    opacity: 0.35;
+  }
+  .salt:hover {
+    opacity: 1.0;
+  }
+
+/* ==== Attribute Selectors==== */
+  [title~="Amazing"] {
+    border: 15px solid green;
+  }
